@@ -1,0 +1,6 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT demo.wsgi
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: "demo.settings"
+  MONGODB_ATLAS_URI: "mongodb+srv://krishteccbe:KRISHtec%405747@ktcluster.cor4zzm.mongodb.net/?authSource=admin&authMechanism=SCRAM-SHA-1"
